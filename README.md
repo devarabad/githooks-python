@@ -82,7 +82,6 @@ $ pre-commit run --all-files
 Trim Trailing Whitespace.................................................Passed
 Fix End of Files.........................................................Passed
 Check for added large files..............................................Passed
-AWS CloudFormation Linter................................................Passed
 ```
 
 ### Add pre-commit plugins
