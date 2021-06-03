@@ -12,4 +12,4 @@ repos:
     rev: v0.49.2
     hooks:
     -   id: cfn-python-lint
-        files: ./.*\.(json|yml|yaml)$
+        files: templates/.*\.(json|yml|yaml)$
