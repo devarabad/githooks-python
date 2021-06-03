@@ -82,7 +82,6 @@ $ pre-commit run --all-files
 Trim Trailing Whitespace.................................................Passed
 Fix End of Files.........................................................Passed
 Check for added large files..............................................Passed
-AWS CloudFormation Linter................................................Passed
 ```
 
 ### Add pre-commit plugins
@@ -112,8 +111,14 @@ repos:
 $ pre-commit clean
 $ pre-commit run -a
 $ git commit -m "My first commit with git hooks"
+AWS CloudFormation Linter................................................Failed
+- hook id: cfn-python-lint
+- exit code: 2
+
+E0000 Null value at line 3 column 10
+templates/template.yaml:3:10
 ```
-<img alt="git commit" src="assets/git_git-hooks-python-aws-cloudformation-lint.jpg" width="70%" height="70%">
+
 
 <br><br>
 
